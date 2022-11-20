@@ -1,8 +1,10 @@
 :root {
-  --bg-white: "#FFFFFF";
+  --bg-white: #ffffff;
   --bg-blue-primary: "";
-  --bg-yellow: "#FFB81C";
-  --bg-dark: "#2B2A2AF2";
+  --bg-yellow: #ffb81c;
+  --bg-yellow-medium: #dc9908fa;
+  --bg-dark: #e3e3e3;
+  --yellow: yellow;
 }
 
 html,

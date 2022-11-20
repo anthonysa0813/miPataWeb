@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/Header.module.css";
+import ButtonSocial from "./Buttons/ButtonSocial";
+import { IoIosAppstore } from "react-icons/io";
+import { AiFillAndroid } from "react-icons/ai";
 
 const Header = () => {
   return (
@@ -16,8 +19,15 @@ const Header = () => {
             />
           </div>
           <div className={styles.socialButtons}>
-            <button>google</button>
-            <button>Ios</button>
+            {/* <button>google</button> */}
+            <ButtonSocial>
+              <IoIosAppstore />
+              <span>Ios</span>
+            </ButtonSocial>
+            <ButtonSocial>
+              <AiFillAndroid />
+              <span>Android</span>
+            </ButtonSocial>
           </div>
         </div>
       </div>

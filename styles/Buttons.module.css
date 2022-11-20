@@ -1,0 +1,25 @@
+.btn {
+  border: none;
+  background-color: none;
+  display: flex;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  column-gap: 0.25rem;
+  background-color: var(--bg-yellow);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--bg-yellow-medium);
+}
+
+.btn svg {
+  font-size: 18px;
+  color: var(--bg-white);
+}
+
+.btn span {
+  color: var(--bg-white);
+}
