@@ -1,3 +1,10 @@
+:root {
+  --bg-white: "#FFFFFF";
+  --bg-blue-primary: "";
+  --bg-yellow: "#FFB81C";
+  --bg-dark: "#2B2A2AF2";
+}
+
 html,
 body {
   padding: 0;
@@ -9,6 +16,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
 * {
