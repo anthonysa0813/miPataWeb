@@ -1,5 +1,5 @@
 .hero {
-  padding: 2rem;
+  padding: 0;
   min-height: 500px;
   /* margin-top: 150px; */
 }
@@ -33,7 +33,7 @@
 }
 
 .heroInfo h1 {
-  font-size: 48px;
+  font-size: 32px;
   color: var(--bg-blue-primary);
   margin: 0;
 }
@@ -45,6 +45,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     margin-top: 0;
+    padding: 2rem;
   }
 
   .heroContainer {
@@ -56,5 +57,9 @@
 
   .heroInfo {
     grid-column: 2/3;
+  }
+
+  .heroInfo h1 {
+    font-size: 48px;
   }
 }
