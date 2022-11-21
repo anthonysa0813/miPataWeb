@@ -18,7 +18,8 @@ const MobileFunctions = () => {
             <div className={styles.gridItem}>
               <div className={styles.content}>
                 <div className={styles.boxIcon}>
-                  <ImQrcode />
+                  {/* <ImQrcode /> */}
+                  <i className="icon-pets"></i>
                 </div>
                 <h4>¡Encuentra a tu mascota! </h4>
               </div>

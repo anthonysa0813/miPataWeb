@@ -2,8 +2,9 @@ import Image from "next/image";
 import React from "react";
 import styles from "../styles/Header.module.css";
 import ButtonPrimary from "./Buttons/ButtonSocial";
-import { IoIosAppstore } from "react-icons/io";
-import { AiFillAndroid } from "react-icons/ai";
+import { GrApple } from "react-icons/gr";
+// import { IoIosAppstore } from "react-icons/io";
+// import { AiFillAndroid } from "react-icons/ai";
 
 const Header = () => {
   return (
@@ -11,21 +12,48 @@ const Header = () => {
       <div className="wrapper">
         <div className={styles.headerContainer}>
           <div className={styles.logoSection}>
-            <Image
-              src="/logo.png"
-              alt="Logo de Mi pata"
-              width={80}
-              height={80}
-            />
+            <h2>miPata</h2>
           </div>
           <div className={styles.socialButtons}>
             <ButtonPrimary>
-              <IoIosAppstore />
-              <span>IOS</span>
+              <GrApple />
+              {/* <Image
+                src="/applestore.png"
+                alt="Logo de apple store"
+                width={20}
+                height={20}
+              /> */}
+              <p
+                className={styles.buttonText}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  margin: ".25rem",
+                }}
+              >
+                <span>Disponible en el </span>
+                <span className={styles.text}>App Store</span>
+              </p>
             </ButtonPrimary>
             <ButtonPrimary>
-              <AiFillAndroid />
-              <span>Android</span>
+              {/* <AiFillAndroid /> */}
+              <Image
+                src="/googleplay.png"
+                alt="Logo de apple store"
+                width={20}
+                height={20}
+              />
+              <p
+                className={styles.buttonText}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  margin: ".25rem",
+                }}
+              >
+                <span>Disponible en el </span>
+                <span className={styles.text}>Play Store</span>
+              </p>
             </ButtonPrimary>
           </div>
         </div>

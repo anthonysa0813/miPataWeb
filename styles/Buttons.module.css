@@ -2,17 +2,20 @@
   border: none;
   background-color: none;
   display: flex;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
   column-gap: 0.25rem;
-  background-color: var(--bg-yellow);
+  background-color: var(--bg-white);
   transition: all 0.3s ease;
+  border: 1px solid;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: var(--bg-yellow-medium);
+  background-color: var(--bg-dark);
+  color: white;
 }
 
 .textCenter {
@@ -21,18 +24,30 @@
   justify-content: center;
 }
 
+.text {
+  font-weight: bold;
+  margin: 0;
+  /* color: orange !important; */
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .textCenter span {
   font-weight: bold;
 }
 
 .btn svg {
   font-size: 18px;
-  color: var(--bg-white);
+
   transition: all 0.3s ease;
 }
 
 .btn span {
-  color: var(--bg-white);
+  font-size: 10px;
+  font-weight: 500;
 }
 
 .btn:hover > span {
@@ -40,7 +55,7 @@
 }
 
 .btn:hover > svg {
-  color: var(--bg-dark);
+  color: var(--bg-white);
 }
 
 .rounded {
@@ -56,4 +71,13 @@
 .rounded svg {
   font-size: 0.5rem;
   height: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+  .btn span {
+    font-size: 1rem;
+  }
 }

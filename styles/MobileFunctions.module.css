@@ -99,17 +99,18 @@
 }
 
 .boxIcon {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   background-color: var(--bg-yellow);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 53% 47% 70% 30% / 30% 26% 74% 70%;
 }
 
 .boxIcon svg {
-  font-size: 32px;
+  font-size: 50px;
 }
 
 .callActionContainer {
@@ -137,6 +138,7 @@
   .gridItem:nth-child(3) {
     grid-column: 3/4;
     align-items: flex-start;
+    justify-content: flex-end;
   }
   .gridItem:nth-child(4) {
     grid-column: 1/2;
@@ -146,5 +148,6 @@
   .gridItem:nth-child(5) {
     grid-column: 3/4;
     align-items: flex-start;
+    justify-content: flex-end;
   }
 }

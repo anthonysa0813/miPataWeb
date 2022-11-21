@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap");
+@import url("../style.css");
 
 :root {
   --bg-white: #ffffff;
@@ -7,6 +8,7 @@
   --bg-blue-primary: rgb(55, 55, 164);
   --bg-yellow: #ffb81c;
   --bg-yellow-medium: #dc9908fa;
+  --bg-orange: #ff8000;
   --bg-dark: #273036;
 }
 
