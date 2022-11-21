@@ -8,6 +8,11 @@ import { IoIosAppstore } from "react-icons/io";
 import { AiFillAndroid } from "react-icons/ai";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCube, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/pagination";
 
 const MobileFunctions = () => {
   return (
@@ -25,12 +30,54 @@ const MobileFunctions = () => {
               </div>
             </div>
             <div className={styles.gridItem}>
-              <Image
-                src="/app.png"
-                alt="Logo de Mi pata"
-                width={250}
-                height={500}
-              />
+              <Swiper
+                effect={"cube"}
+                grabCursor={true}
+                style={{ width: 250 }}
+                cubeEffect={{
+                  shadow: true,
+                  slideShadows: true,
+                  shadowOffset: 20,
+                  shadowScale: 0.94,
+                }}
+                autoplay
+                pagination={true}
+                modules={[EffectCube, Pagination]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <Image
+                    src="/app.png"
+                    alt="Logo de Mi pata"
+                    width={250}
+                    height={500}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/apphome.jpg"
+                    alt="Logo de Mi pata"
+                    width={250}
+                    height={500}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/apphome_store.jpg"
+                    alt="Logo de Mi pata"
+                    width={250}
+                    height={500}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src="/appMap.jpg"
+                    alt="Logo de Mi pata"
+                    width={250}
+                    height={500}
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
             <div className={styles.gridItem}>
               <div className={styles.content}>
