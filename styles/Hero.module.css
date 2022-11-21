@@ -1,6 +1,7 @@
 .hero {
   padding: 2rem;
   min-height: 500px;
+  /* margin-top: 150px; */
 }
 
 .heroContainer {
@@ -9,12 +10,25 @@
 }
 
 .imageContent {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 400px;
+  display: none;
+}
+
+.imageContent img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .heroInfo {
+  grid-column: 1/-1;
+  /* grid-row: 1/2; */
+
   padding: 3rem;
 }
 
@@ -26,4 +40,21 @@
 
 .heroInfo p {
   color: var(--bg-gray200);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 0;
+  }
+
+  .heroContainer {
+  }
+  .imageContent {
+    grid-column: 1/2;
+    display: block;
+  }
+
+  .heroInfo {
+    grid-column: 2/3;
+  }
 }

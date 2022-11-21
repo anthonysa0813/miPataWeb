@@ -1,5 +1,5 @@
 .footer {
-  height: 400px;
+  height: 700px;
   position: relative;
 }
 
@@ -30,6 +30,18 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem;
+  gap: 2rem;
+}
+
+.socials {
+  grid-column: 1/-1;
+}
+
+.contacts {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logoSection {
@@ -49,7 +61,6 @@
   margin-block: 1rem;
   display: flex;
   column-gap: 0.5rem;
-  /* border: 3px solid brown; */
   justify-content: center;
 }
 
@@ -65,7 +76,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 1px solid var(--bg-white);
   transition: all 0.3s ease;
 }
@@ -118,6 +128,9 @@
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  grid-column: 1/-1;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
@@ -145,4 +158,46 @@
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--bg-white);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 400px;
+  }
+
+  .contacts {
+    grid-column: 2/3;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .subscribe {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .socials {
+    grid-column: 1/2;
+  }
+
+  .contacts {
+    grid-column: 2/3;
+  }
+
+  .subscribe {
+    grid-column: 3/-1;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .form {
+    width: 80%;
+  }
 }

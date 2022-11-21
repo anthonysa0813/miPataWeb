@@ -6,10 +6,12 @@ import { MdPets, MdOutlineRecommend, MdPlace } from "react-icons/md";
 import ButtonPrimary from "./Buttons/ButtonSocial";
 import { IoIosAppstore } from "react-icons/io";
 import { AiFillAndroid } from "react-icons/ai";
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const MobileFunctions = () => {
   return (
-    <>
+    <AnimationOnScroll animateIn="animate__bounceIn">
       <section className={styles.mobile}>
         <div className="wrapper">
           <div className={styles.mobileContainer}>
@@ -73,7 +75,7 @@ const MobileFunctions = () => {
           </div>
         </div>
       </div>
-    </>
+    </AnimationOnScroll>
   );
 };
 

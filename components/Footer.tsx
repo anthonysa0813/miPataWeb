@@ -34,7 +34,7 @@ const Footer = () => {
         </svg>
         <div className="wrapper">
           <div className={styles.footerContainer}>
-            <div className="socials">
+            <div className={styles.socials}>
               <div className={styles.logoSection}>
                 <Image
                   src="/logo.png"
@@ -57,7 +57,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="contacts">
+            <div className={styles.contacts}>
               <div className={styles.titleBox}>
                 <p>CONTACT</p>
               </div>
