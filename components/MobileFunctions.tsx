@@ -9,7 +9,7 @@ import { AiFillAndroid } from "react-icons/ai";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCube, Pagination } from "swiper";
+import { EffectCube, Pagination, EffectCreative, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
@@ -31,18 +31,27 @@ const MobileFunctions = () => {
             </div>
             <div className={styles.gridItem}>
               <Swiper
-                effect={"cube"}
+                effect={"creative"}
                 grabCursor={true}
                 style={{ width: 250 }}
-                cubeEffect={{
-                  shadow: true,
-                  slideShadows: true,
-                  shadowOffset: 20,
-                  shadowScale: 0.94,
+                slidePrevClass={"2"}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
                 }}
-                autoplay
+                creativeEffect={{
+                  prev: {
+                    shadow: true,
+                    translate: [0, 0, -400],
+                  },
+                  next: {
+                    translate: ["100%", 0, 0],
+                  },
+                }}
+                modules={[Autoplay, EffectCreative, Pagination]}
+                // autoplay={{ disableOnInteraction: true }}
                 pagination={true}
-                modules={[EffectCube, Pagination]}
+                // modules={[EffectCube, Pagination]}
                 className="mySwiper"
               >
                 <SwiperSlide>
