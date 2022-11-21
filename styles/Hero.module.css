@@ -1,0 +1,29 @@
+.hero {
+  padding: 2rem;
+  min-height: 500px;
+}
+
+.heroContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.imageContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroInfo {
+  padding: 3rem;
+}
+
+.heroInfo h1 {
+  font-size: 48px;
+  color: var(--bg-blue-primary);
+  margin: 0;
+}
+
+.heroInfo p {
+  color: var(--bg-gray200);
+}

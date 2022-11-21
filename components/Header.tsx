@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/Header.module.css";
-import ButtonSocial from "./Buttons/ButtonSocial";
+import ButtonPrimary from "./Buttons/ButtonSocial";
 import { IoIosAppstore } from "react-icons/io";
 import { AiFillAndroid } from "react-icons/ai";
 
@@ -19,15 +19,14 @@ const Header = () => {
             />
           </div>
           <div className={styles.socialButtons}>
-            {/* <button>google</button> */}
-            <ButtonSocial>
+            <ButtonPrimary>
               <IoIosAppstore />
-              <span>Ios</span>
-            </ButtonSocial>
-            <ButtonSocial>
+              <span>IOS</span>
+            </ButtonPrimary>
+            <ButtonPrimary>
               <AiFillAndroid />
               <span>Android</span>
-            </ButtonSocial>
+            </ButtonPrimary>
           </div>
         </div>
       </div>
