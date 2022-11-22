@@ -31,7 +31,7 @@ const Header = () => {
                   margin: ".25rem",
                 }}
               >
-                <span>Disponible en el </span>
+                {/* <span>Disponible en el </span> */}
                 <span className={styles.text}>App Store</span>
               </p>
             </ButtonPrimary>
@@ -51,7 +51,7 @@ const Header = () => {
                   margin: ".25rem",
                 }}
               >
-                <span>Disponible en el </span>
+                {/* <span>Disponible en el </span> */}
                 <span className={styles.text}>Play Store</span>
               </p>
             </ButtonPrimary>

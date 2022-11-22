@@ -26,7 +26,8 @@ const MobileFunctions = () => {
                   {/* <ImQrcode /> */}
                   <i className="icon-pets"></i>
                 </div>
-                <h4>¡Encuentra a tu mascota! </h4>
+                <h4>¡Reconocimiento facial!</h4>
+                <span>powered by Globant</span>
               </div>
             </div>
             <div className={styles.gridItem}>
@@ -111,6 +112,7 @@ const MobileFunctions = () => {
                 </div>
                 <h4>
                   Encuentra los mejores lugares para visitar o pasear con ell@s
+                  y mucho más...
                 </h4>
               </div>
             </div>

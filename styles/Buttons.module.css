@@ -51,7 +51,7 @@
 }
 
 .btn:hover > span {
-  color: var(--bg-dark);
+  color: var(--bg-white);
 }
 
 .btn:hover > svg {

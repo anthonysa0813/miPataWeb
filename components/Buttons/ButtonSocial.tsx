@@ -13,6 +13,7 @@ const ButtonPrimary = ({ children, rounded, center }: Prop) => {
       className={`${styles.btn} ${rounded ? styles.rounded : ""} ${
         center ? styles.textCenter : ""
       }`}
+      type="button"
     >
       {children}
     </button>
