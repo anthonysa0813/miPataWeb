@@ -13,6 +13,7 @@ import { EffectCube, Pagination, EffectCreative, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
+import { GrApple } from "react-icons/gr";
 
 const MobileFunctions = () => {
   return (
@@ -124,12 +125,44 @@ const MobileFunctions = () => {
           <div className={styles.callActionContainer}>
             <h4>Disponible ahora:</h4>
             <ButtonPrimary>
-              <IoIosAppstore />
-              <span>IOS</span>
+              {/* <AiFillAndroid /> */}
+              <Image
+                src="/googleplay.png"
+                alt="Logo de apple store"
+                width={20}
+                height={20}
+              />
+              <p
+                className={styles.buttonText}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  margin: ".25rem",
+                }}
+              >
+                {/* <span>Disponible en el </span> */}
+                <span className={styles.text}>Play Store</span>
+              </p>
             </ButtonPrimary>
             <ButtonPrimary>
-              <AiFillAndroid />
-              <span>Android</span>
+              <GrApple />
+              {/* <Image
+                src="/applestore.png"
+                alt="Logo de apple store"
+                width={20}
+                height={20}
+              /> */}
+              <p
+                className={styles.buttonText}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  margin: ".25rem",
+                }}
+              >
+                {/* <span>Disponible en el </span> */}
+                <span className={styles.text}>App Store</span>
+              </p>
             </ButtonPrimary>
           </div>
         </div>

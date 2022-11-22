@@ -75,7 +75,7 @@ const Footer = () => {
                 height={50}
               /> */}
               <div className={styles.titleBox}>
-                <p>Quick Links</p>
+                <p>QUICK LINKS </p>
               </div>
               <p className={styles.contactItem}>
                 <BiBook />
