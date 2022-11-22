@@ -21,10 +21,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .gridItem .content h4 {
   text-align: center;
+  margin: 0;
+}
+
+.gridItem .content span {
+  text-align: center;
+  color: var(--bg-gray200);
 }
 
 .gridItem:nth-child(1) {
