@@ -1,15 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/MobileFunctions.module.css";
-import { ImQrcode } from "react-icons/im";
 import { MdPets, MdOutlineRecommend, MdPlace } from "react-icons/md";
 import ButtonPrimary from "./Buttons/ButtonSocial";
-import { IoIosAppstore } from "react-icons/io";
-import { AiFillAndroid } from "react-icons/ai";
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCube, Pagination, EffectCreative, Autoplay } from "swiper";
+import { Pagination, EffectCreative, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
